@@ -3,11 +3,8 @@
     --light: rgb(132, 226, 233);
 }
 
-/* * { */
-    /* margin: 20px; */
-/* } */
 body {
-    /* functionality */
+    /* placement */
     display: flex;
     flex-direction: column;
 
@@ -15,8 +12,6 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: var(--dark);
     color: var(--light);
-
-    /* spacing */
 }
 
 /* header:h1, header:nav:ul:li:a */
@@ -26,11 +21,12 @@ header {
 
     background-color: var(--light);
     color: var(--dark);
+    font-size: 20px;
 
     justify-content: space-between;
     margin: 20px 0px;
     width: 100%;
-    height: 50px;
+    height: 75px;
 }
 h1 {
     display: flex;
@@ -41,6 +37,15 @@ h1 {
     font-size: 35px;
 
     margin-left: 5%;
+}
+h1 img{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    /* zoom: 100%; */
+    border-radius: 100px;
+    border: var(--dark) 2px solid;
+    margin-right: 10px;
 }
 nav {
     display: flex;
@@ -77,19 +82,23 @@ nav li a:hover {
 }
 .hero figcaption {
     display: flex;
-    justify-content: flex-end;
+    justify-content:flex-end;
     position: relative;
-    margin: -40px 0 15px 75%;
+    margin: -40px 0 15px 80%;
     align-items: center;
-    
+        
     background-color: var(--dark);
     font-size: 22px;
 
     padding: 5px;
+    /* width: 25%; */
+    /* width:fit-content; */
 }
 
 main {
     margin-top: 20px;
+    margin-left: 20px;
+    /* width: 100%; */
 }
 
 section {
@@ -104,7 +113,7 @@ section {
 h2 {
     display: flex;
     align-items: center;
-    /* border-right: 5px var(--light) solid; */
+    border-right: 10px var(--dark) double;
     padding-right: 5px;
     font-size: 30px;
     width: 25%;
@@ -113,6 +122,7 @@ h2 {
     justify-content: center;
     background-color: var(--light);
     color: var(--dark);
+    /* border-radius: 50px;      Maybe*/ 
 }
 p {
     /* background-color: var(--dark); */
@@ -131,53 +141,70 @@ div {
     /* display: flex; */
     /* flex-wrap: wrap; */
 /* } */
-#my-work article {
-    display: flex;
-    flex: 1 0 auto;
+/* #my-work article { */
+    /* display: flex; */
+    /* flex: 1 0 auto; */
     /* width: 35vh */
     /* flex-wrap: wrap; */
     /* width: 65%;  */
     /* margin-left: 25%; */
-}
+/* } */
 #my-work a {
+    /* position: relative; */
+    /* margin-bottom: -20px; */
     text-decoration: none;
     color: var(--light);
     /* width: 30%; */
     /* z-index: 1; */
     /* position:relative; */
+    margin: 20px; /*important to adjust*/
+}
+#my-work a:hover {
+    box-shadow: inset 0px 0px 8px var(--light), 0 0 15px var(--light);
 }
 .special {
     display: flex;
     flex: 2 0 auto;
     min-width: 75%;
-    width: 75vh;
+    width: 100%;
 }
 .special img{
+    display: flex;
     flex: 1;
-    max-width: 75%;
+    max-width: 100%;
+    /* justify-content: center; */
     /* width: 75vh; */
 }
-/*.card {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 10%;
-    margin-left: 25%;
-}*/
 .card {
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+    /* width: 10%; */
+    /* margin-left: 25%; */
     display: flex;
     flex: 1 0 auto;
     /* width: 37.5vh; */
-    /* width: 37.5%; */
+    width: 50%;
+    /* justify-content: space-between; */
 }
 .card img {
     display: flex;
-    width: 30vh;
-}
-/* .card img { */
+    width: 100%;
     /* width: 37.5%; */
     /* flex: 1; */
-/* } */
+}
+
+h3 {
+    position: relative;
+    /* margin-bottom: 10px; */
+    z-index: 2;
+    margin-top: -50px;
+    background-color: var(--dark);
+    width: fit-content;
+    padding: 5px;
+    font-size: 25px;
+}
+
 
 #contact-me {
     display: flex;
@@ -185,7 +212,7 @@ div {
 }
 #contact-me ul{
     display: flex;
-    width: 75%;
+    /* width: 75%; */
     /* justify-content: space-around; */
 
 }
@@ -195,42 +222,33 @@ div {
     padding: 10px;
 }
 #contact-me a {
-    display: flex;
-    flex-direction: row;
+    /* display: flex; */
+    /* flex-direction: row; */
     text-decoration: none;
     color: var(--light);
     /* justify-content: space-around; */
+}
+#contact-me a:hover {
+    text-decoration: underline;
+    background-color: var(--light);
+    color: var(--dark);
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bold;
 }
 
 footer {
     display: flex;
     justify-content: center;
-}
-
-
-/* TO INCLUDE:*/
-/* header */
-/* nav bar */
-/* "hero image" */
-/* "hero image" caption */
-/* section headings (h2) */
-/* section content */
-/* about me paragraph */
-/* .special-card */
-/* .card */
-/* contact me links */
-/* footer */
-
-
-
-/* heading sizes */
-
-
-h3 {
-    font-size: 25px;
-}
-h4 {
     font-size: 20px;
 }
 
 /* Media Query Stuff */
+@media screen and (max-width: 992px) {
+
+}
+@media screen and (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+}
