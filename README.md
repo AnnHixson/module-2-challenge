@@ -36,29 +36,12 @@ README template is from [https://coding-boot-camp.github.io/full-stack/github/pr
 
 How to make an image a link: [https://www.tutorialspoint.com/How-to-use-an-image-as-a-link-in-HTML#:~:text=To%20use%20image%20as%20a,add%20the%20height%20and%20width.](https://www.tutorialspoint.com/How-to-use-an-image-as-a-link-in-HTML#:~:text=To%20use%20image%20as%20a,add%20the%20height%20and%20width.)
 How to crop images in CSS: [https://www.digitalocean.com/community/tutorials/css-cropping-images-object-fit](https://www.digitalocean.com/community/tutorials/css-cropping-images-object-fit)
+Width: 100% vs. margin-right solution: [https://stackoverflow.com/questions/9877379/margin-right-broken-on-width-100](https://stackoverflow.com/questions/9877379/margin-right-broken-on-width-100)
+
+Spider-man images taken by me in the photo mode of Marvel's Spider-Man Remastered on PC.
+
+My avatar was created by me on [dolldivine.com](dolldivine.com/mega-anime-avatar-creator.php). Artwork by: PRINCEOFREDROSES. Game by: RINMARU.
 
 ## License
 
 N/A
-
----
-
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
-## Features
-
-If your project has a lot of features, list them here.
-
-## How to Contribute
-
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
-
-## Tests
-
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
