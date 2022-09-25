@@ -1,233 +1,287 @@
+/* Sets variables that can be called throughout */
 :root {
     --dark: rgb(32, 35, 43);
     --light: rgb(132, 226, 233);
 }
 
+/* Sets the body to a flex column and sets the text font, text color, and the background color */
 body {
-    /* placement */
     display: flex;
     flex-direction: column;
 
-    /* aesthetics */
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: var(--dark);
     color: var(--light);
 }
 
+/* Sets the header to a flex row, sets the spacing, and sets the text size, text color, and background color */
 header {
     display:flex;
     flex-direction: row;
-
-    background-color: var(--light);
-    color: var(--dark);
-    font-size: 20px;
-
     justify-content: space-between;
     margin: 20px 0px;
     width: 100%;
     height: 75px;
+
+    background-color: var(--light);
+    color: var(--dark);
+    font-size: 20px;
 }
+
+/* Sets the heading of the header to a flex row, sets the spacing, and sets the text size */
 h1 {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    margin-left: 5%;
     
     font-size: 35px;
-
-    margin-left: 5%;
 }
-h1 img{
+
+/* Sets the spacing of the image of the heading of the header, and sets its border style and shape */
+h1 img {
     display: flex;
     align-items: center;
     height: 70px;
+    margin-right: 10px;
+
     border-radius: 100px;
     border: var(--dark) 2px solid;
-    margin-right: 10px;
 }
+
+/* Sets the position of the nav bar and its contents */
 nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
+
+/* Helps set the position of the nav bar and its contents */
 nav ul {
     display: flex;
-
 }
+
+/* Helps set the position of the nav bar and its contents */
 nav li{
     display: flex;
     justify-content: flex-end;
-
     padding: 10px;
 }
+
+/* Helps set the position of the nav bar and its contents and adjusts the styling of the links */
 nav li a{
     display: flex;
     justify-content: flex-end;
+
     text-decoration: none;
     color: var(--dark);
 }
+
+/* Changes the styling of the nav bar links when they are hovered over */
 nav li a:hover {
     text-decoration: underline;
     background-color: var(--dark);
     color: var(--light);
 }
 
+/* Positions the hero image */
 .hero img {
     width: 100%;
     max-height: 300px;
     object-fit: cover;
     object-position: 0 5%;
 }
+
+/* Positions and styles the hero image caption */
 .hero figcaption {
     display: flex;
     justify-content:flex-end;
     position: relative;
     margin: -40px 0 15px auto;
     align-items: center;
+    padding: 5px 10px;
+    width:fit-content;
         
     background-color: var(--dark);
     font-size: 22px;
-
-    padding: 5px 10px;
-
-    width:fit-content;
 }
 
+/* Sets spacing around the main section */
 main {
     margin-top: 20px;
     margin-left: 20px;
 }
 
+/* Sets the sections to flex rows and sets their spacing */
 section {
     display: flex;
     flex-direction: row;
     margin-bottom: 50px;
 }
+
+/* Positions and styles the headings of the sections */
 h2 {
     display: flex;
     align-items: center;
-    border-right: 10px var(--dark) double;
     padding-right: 5px;
-    font-size: 30px;
     width: 25%;
     max-width: 200px;
     margin-right: 20px;
     justify-content: center;
+
+    border-right: 10px var(--dark) double;
+    font-size: 30px;
     background-color: var(--light);
     color: var(--dark);
 }
 
+/* Positions and styles the paragraph */
 p {
-    color: var(--light);
     width: 100%;
+
+    color: var(--light);
     font-size: 17px;
     text-indent: 40px;
 }
 
+/* Helps position the "my-work" section and its contents */
 div {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
 }
+
+/* Helps position the "my-work" section and its contents and styles the links' text */
 #my-work a {
+    margin-right: 20px;
+
     text-decoration: none;
     color: var(--light);
-
-    margin-right: 20px;
 }
+
+/* Creates a glow around the cards when they are hovered over */
 #my-work a:hover {
     box-shadow: inset 0px 0px 8px var(--light), 0 0 15px var(--light);
 }
+
+/* Helps position the "my-work" section and its contents */
 .special {
     display: flex;
     flex: 2 0 auto;
     min-width: 75%;
     width: 100%;
 }
+
+/* Helps position the "my-work" section and its image contents */
 .special img{
     display: flex;
     flex: 1;
     max-width: 100%;
 }
+
+/* Helps position the "my-work" section and its contents */
 .card {
     display: flex;
     flex: 1 0 auto;
     width: 50%;
     margin-top: 20px;
 }
+
+/* Helps position the "my-work" section and its image contents */
 .card img {
     display: flex;
     width: 100%;
 }
+
+/* Styles and positions the "my-work" section's image captions */
 h3 {
     position: relative;
     z-index: 2;
     margin-top: -50px;
     margin-bottom: 15px;
-    background-color: var(--dark);
     width: fit-content;
     padding: 5px;
+
+    background-color: var(--dark);
     font-size: 25px;
 }
 
+/* Helps set the position of the "contact-me" section's links */
 #contact-me ul{
     display: flex;
 }
+
+/* Helps set the position of the "contact-me" section's links */
 #contact-me li {
     display: flex;
     padding: 10px;
 }
+
+/* Styles the "contact-me" section's links */
 #contact-me a {
     text-decoration: none;
     color: var(--light);
 }
+
+/* Changes the styling of the "contact-me" section's links when they are hovered over */
 #contact-me a:hover {
+    padding: 5px;
+
     text-decoration: underline;
     background-color: var(--light);
     color: var(--dark);
     border-radius: 5px;
-    padding: 5px;
     font-weight: bold;
 }
 
+/* Sets the position and style of the footer text */
 footer {
     display: flex;
     justify-content: center;
+
     font-size: 20px;
 }
 
-
+/* Adjusts the display when the screen size is below 992px wide */
 @media screen and (max-width: 992px) {
+    /* Changes the header to a flex column and sets its height */
     header {
         display: flex;
         flex-direction: column;
         height: 150px;
     }
+    /* Changes the position of the heading of the header */
     h1 {
         display: flex;
         justify-content: center;
         padding-top: 15px;
         margin-left: 0;
     }
+    /* Changes the position and style of the nav bar */
     nav {
         display: flex;
         justify-content: center;
         border-bottom: solid 5px var(--light);
         background-color: var(--dark);
     }
+    /* Changes the style of the nav bar links */
     nav li a {
         color: var(--light);
     }
+    /* Changes the first and third sections to flex columns and positions them */
     #about-me,
     #contact-me {
         display: flex;
         flex-direction: column;
         margin-right: 20px;
     }
+    /* Changes the second section to a flex column */
     #my-work {
         display: flex;
         flex-direction: column;
     }
+    /* Changes the position and style of the headings of the first and third sections */
     h2 {
         display: flex;
         justify-content: center;
@@ -242,6 +296,7 @@ footer {
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
     }
+    /* Changes the position and style of the heading of the second section */
     #my-work h2 {
         display: flex;
         justify-content: center;
@@ -256,17 +311,21 @@ footer {
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
     }
+    /* Changes the position of the paragraph */
     p {
         display: flex;
         width: 100%;
         margin-top: 15px;
     }
+    /* Changes the position of the "contact-me" links */
     #contact-me ul {
         display: flex;
         justify-content: center;
     }
 }
+/* Adjusts the display when the screen size is below 768px wide */
 @media screen and (max-width: 768px) {
+    /* Changes the position of the 2nd-5th cards */
     .card {
         width: 100%;
     }
